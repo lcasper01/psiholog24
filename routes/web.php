@@ -15,9 +15,11 @@
 //Auth::routes();
 
 Route::get('/', 'PageController@index')->name('home');
-Route::get('/SpecProfile', 'PageController@SpecProfile')->name('SpecProfile');
-Route::get('/SpecProfileSettings', 'PageController@SpecProfileSettings')->name('SpecProfileSettings');
-Route::post('/SpecProfileSettings/edit', 'Profile\EditProfileController@edit')->name('EditProfile');
+Route::get('/specProfile', 'PageController@SpecProfile')->name('SpecProfile');
+Route::get('/specProfileSettings', 'PageController@SpecProfileSettings')->name('SpecProfileSettings');
+Route::post('/specProfileSettings/edit', 'Profile\EditProfileController@edit')->name('EditProfile');
+Route::get('/speclist','PageController@Speclist')->name('Speclist');
+Route::post('/specProfileSettings/upload', 'Profile\EditProfileController@upload')->name('UploadImage');
 
 
 

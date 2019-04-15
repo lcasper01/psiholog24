@@ -46,7 +46,7 @@
                     <nav id="navigation">
                         <ul id="responsive">
 
-                            <li><a href="#" class="current">Главная</a>
+                            <li><a href="{{route('home')}}" class="current">Главная</a>
                                 {{--<ul class="dropdown-nav">--}}
                                 {{--<li><a href="index.html">Home 1</a></li>--}}
                                 {{--<li><a href="index-2.html">Home 2</a></li>--}}
@@ -55,45 +55,45 @@
                             </li>
 
                             <li><a href="#">Клиенты</a>
-                                <ul class="dropdown-nav">
-                                    <li><a href="#">Browse Jobs</a>
-                                        <ul class="dropdown-nav">
-                                            <li><a href="jobs-list-layout-full-page-map.html">Full Page List + Map</a></li>
-                                            <li><a href="jobs-grid-layout-full-page-map.html">Full Page Grid + Map</a></li>
-                                            <li><a href="jobs-grid-layout-full-page.html">Full Page Grid</a></li>
-                                            <li><a href="jobs-list-layout-1.html">List Layout 1</a></li>
-                                            <li><a href="jobs-list-layout-2.html">List Layout 2</a></li>
-                                            <li><a href="jobs-grid-layout.html">Grid Layout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Browse Tasks</a>
-                                        <ul class="dropdown-nav">
-                                            <li><a href="tasks-list-layout-1.html">List Layout 1</a></li>
-                                            <li><a href="tasks-list-layout-2.html">List Layout 2</a></li>
-                                            <li><a href="tasks-grid-layout.html">Grid Layout</a></li>
-                                            <li><a href="tasks-grid-layout-full-page.html">Full Page Grid</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="browse-companies.html">Browse Companies</a></li>
-                                    <li><a href="single-job-page.html">Job Page</a></li>
-                                    <li><a href="single-task-page.html">Task Page</a></li>
-                                    <li><a href="single-company-profile.html">Company Profile</a></li>
-                                </ul>
+                                {{--<ul class="dropdown-nav">--}}
+                                    {{--<li><a href="#">Browse Jobs</a>--}}
+                                        {{--<ul class="dropdown-nav">--}}
+                                            {{--<li><a href="jobs-list-layout-full-page-map.html">Full Page List + Map</a></li>--}}
+                                            {{--<li><a href="jobs-grid-layout-full-page-map.html">Full Page Grid + Map</a></li>--}}
+                                            {{--<li><a href="jobs-grid-layout-full-page.html">Full Page Grid</a></li>--}}
+                                            {{--<li><a href="jobs-list-layout-1.html">List Layout 1</a></li>--}}
+                                            {{--<li><a href="jobs-list-layout-2.html">List Layout 2</a></li>--}}
+                                            {{--<li><a href="jobs-grid-layout.html">Grid Layout</a></li>--}}
+                                        {{--</ul>--}}
+                                    {{--</li>--}}
+                                    {{--<li><a href="#">Browse Tasks</a>--}}
+                                        {{--<ul class="dropdown-nav">--}}
+                                            {{--<li><a href="tasks-list-layout-1.html">List Layout 1</a></li>--}}
+                                            {{--<li><a href="tasks-list-layout-2.html">List Layout 2</a></li>--}}
+                                            {{--<li><a href="tasks-grid-layout.html">Grid Layout</a></li>--}}
+                                            {{--<li><a href="tasks-grid-layout-full-page.html">Full Page Grid</a></li>--}}
+                                        {{--</ul>--}}
+                                    {{--</li>--}}
+                                    {{--<li><a href="browse-companies.html">Browse Companies</a></li>--}}
+                                    {{--<li><a href="single-job-page.html">Job Page</a></li>--}}
+                                    {{--<li><a href="single-task-page.html">Task Page</a></li>--}}
+                                    {{--<li><a href="single-company-profile.html">Company Profile</a></li>--}}
+                                {{--</ul>--}}
                             </li>
 
                             <li><a href="#">Специалисты</a>
                                 <ul class="dropdown-nav">
-                                    <li><a href="#">Find a Freelancer</a>
-                                        <ul class="dropdown-nav">
-                                            <li><a href="freelancers-grid-layout-full-page.html">Full Page Grid</a></li>
-                                            <li><a href="freelancers-grid-layout.html">Grid Layout</a></li>
-                                            <li><a href="freelancers-list-layout-1.html">List Layout 1</a></li>
-                                            <li><a href="freelancers-list-layout-2.html">List Layout 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="single-freelancer-profile.html">Freelancer Profile</a></li>
-                                    <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
-                                    <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
+                                    {{--<li><a href="#">Find a Freelancer</a>--}}
+                                        {{--<ul class="dropdown-nav">--}}
+                                            {{--<li><a href="freelancers-grid-layout-full-page.html">Full Page Grid</a></li>--}}
+                                            {{--<li><a href="freelancers-grid-layout.html">Grid Layout</a></li>--}}
+                                            {{--<li><a href="freelancers-list-layout-1.html">List Layout 1</a></li>--}}
+                                            {{--<li><a href="freelancers-list-layout-2.html">List Layout 2</a></li>--}}
+                                        {{--</ul>--}}
+                                    {{--</li>--}}
+                                    <li><a href="{{route('Speclist')}}">Все специалисты</a></li>
+                                    {{--<li><a href="dashboard-post-a-job.html">Post a Job</a></li>--}}
+                                    {{--<li><a href="dashboard-post-a-task.html">Post a Task</a></li>--}}
                                 </ul>
                             </li>
 
@@ -123,17 +123,17 @@
                             {{--</li>--}}
 
                             <li><a href="#">Контакты</a>
-                                <ul class="dropdown-nav">
-                                    <li><a href="pages-blog.html">Blog</a></li>
-                                    <li><a href="pages-pricing-plans.html">Pricing Plans</a></li>
-                                    <li><a href="pages-checkout-page.html">Checkout Page</a></li>
-                                    <li><a href="pages-invoice-template.html">Invoice Template</a></li>
-                                    <li><a href="pages-user-interface-elements.html">User Interface Elements</a></li>
-                                    <li><a href="pages-icons-cheatsheet.html">Icons Cheatsheet</a></li>
-                                    <li><a href="pages-login.html">Login & Register</a></li>
-                                    <li><a href="pages-404.html">404 Page</a></li>
-                                    <li><a href="pages-contact.html">Contact</a></li>
-                                </ul>
+                                {{--<ul class="dropdown-nav">--}}
+                                    {{--<li><a href="pages-blog.html">Blog</a></li>--}}
+                                    {{--<li><a href="pages-pricing-plans.html">Pricing Plans</a></li>--}}
+                                    {{--<li><a href="pages-checkout-page.html">Checkout Page</a></li>--}}
+                                    {{--<li><a href="pages-invoice-template.html">Invoice Template</a></li>--}}
+                                    {{--<li><a href="pages-user-interface-elements.html">User Interface Elements</a></li>--}}
+                                    {{--<li><a href="pages-icons-cheatsheet.html">Icons Cheatsheet</a></li>--}}
+                                    {{--<li><a href="pages-login.html">Login & Register</a></li>--}}
+                                    {{--<li><a href="pages-404.html">404 Page</a></li>--}}
+                                    {{--<li><a href="pages-contact.html">Contact</a></li>--}}
+                                {{--</ul>--}}
                             </li>
 
                         </ul>

@@ -23,6 +23,12 @@ class PageController extends Controller
         return view('page.Specprofile');
     }
 
+    public function Speclist()
+    {
+        $users=USER::all();
+        return view('page.SpecList',compact('users'));
+    }
+
     public function SpecProfileSettings()
     {
         if (Auth::check()) {

@@ -23,4 +23,10 @@ class EditProfileController extends Controller
 
 
     }
+    public function upload(Request $request)
+    {
+        dd($request);
+        $path=$request->file('image')->store('uploads', 'public');
+        return view('SpecProfileSettings',compact('path'));
+    }
 }

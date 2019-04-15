@@ -104,11 +104,20 @@
                             <div class="row">
 
                                 <div class="col-auto">
-                                    <div class="avatar-wrapper" data-tippy-placement="bottom" title="Сменить аватар">
-                                        <img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
-                                        <div class="upload-button"></div>
-                                        <input class="file-upload" type="file" accept="image/*"/>
-                                    </div>
+                                    <form method="post" action="{{ route('UploadImage') }}" enctype="multipart/form-data" id="upload-image-form">
+                                    {{--<form action="{{route('UploadImage')}}" method="post" enctype="multipart/form-data" id="upload-image-form">--}}
+                                        <div class="avatar-wrapper" data-tippy-placement="bottom" title="Сменить аватар">
+                                            <img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
+                                            {{--<button class="upload-button" type="submit" form="upload-image-form"></button>--}}
+                                            {{--<div class="upload-button"></div>--}}
+                                            {{--<input class="file-upload" type="file" name="image" accept="image/*"/>--}}
+
+                                        </div>
+                                        <input type="file" name="image">
+                                        {{--<button class="button ripple-effect big" type="submit" form="upload-image-form">Изменить</button>--}}
+                                        <button class="button full-width button-sliding-icon ripple-effect" type="submit" form="upload-image-form">Изменить <i class="icon-material-outline-arrow-right-alt"></i></button>
+                                    </form>
+
                                 </div>
 
                                 <div class="col">
