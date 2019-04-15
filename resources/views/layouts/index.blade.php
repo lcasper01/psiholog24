@@ -11,7 +11,7 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/colors/blue.css')}}">
+    <link rel="stylesheet" href="{{asset('css/colors/red.css')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Scripts -->
