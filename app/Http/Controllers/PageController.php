@@ -10,7 +10,11 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('page.home');
+        if (Auth::check()) {
+            $userID = Auth::user()->id;
+            $user = User::find($userID);
+        }
+        return view('page.home', compact('user'));
     }
     public function test()
     {

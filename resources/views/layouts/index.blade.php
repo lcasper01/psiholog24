@@ -162,7 +162,7 @@
                     @else
                         <div class="header-notifications user-menu">
                         <div class="header-notifications-trigger">
-                        <a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
+                        <a href="#"><div class="user-avatar status-online"><img src="{{isset($user->avatar) ? $user->avatar : 'LybkO8p6HSvvfZHK8sEobbEzuIKr46E0p6HZJdMd.jpeg', asset('/storage/'. $user->avatar)}}" alt=""></div></a>
                         </div>
 
                     <!-- Dropdown -->
@@ -174,7 +174,7 @@
 
                         <!-- User Name / Avatar -->
                         <div class="user-details">
-                        <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+                        <div class="user-avatar status-online"><img src="{{isset($user->avatar) ? $user->avatar : 'LybkO8p6HSvvfZHK8sEobbEzuIKr46E0p6HZJdMd.jpeg', asset('/storage/'. $user->avatar)}}" alt=""></div>
                         <div class="user-name">
                             {{ Auth::user()->name }}<span>Психолог</span>
                         </div>

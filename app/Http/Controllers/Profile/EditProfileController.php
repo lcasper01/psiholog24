@@ -32,6 +32,10 @@ class EditProfileController extends Controller
     public function upload(Request $request)
     {
         $path=$request->file('image')->store('uploads', 'public');
-        return view('page.home');
+        $userID = Auth::user()->id;
+        $user = User::find($userID);
+        $user->avatar=$path;
+        $user->save();
+        return view('page.home',compact('user'));
     }
 }

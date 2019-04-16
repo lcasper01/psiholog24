@@ -97,7 +97,7 @@
                             <h3><i class="icon-material-outline-account-circle"></i> Мой аккаунт</h3>
                         </div>
 
-                        <div class="content with-padding padding-bottom-0">
+                        <div class="content with-padding">
 
                             <div class="row">
 
@@ -105,13 +105,17 @@
                                     {{csrf_field()}}
                                     <div class="col-auto">
                                         <div class="avatar-wrapper" data-tippy-placement="bottom" title="Сменить аватар">
-                                            <img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
-                                            <div class="upload-button"></div>
                                             <input class="file-upload" type="file" name="image" accept="image/*"/>
+
+                                            <img class="profile-pic" src="{{asset('/storage/'. $user->avatar )}}" alt="" />
+                                            <div class="upload-button"></div>
+
                                         </div>
+                                        <button class="button ripple-effect big margin-top-30" type="submit" form="upload-image-form">Загрузить</button>
                                     </div>
-                                    <button class="button full-width button-sliding-icon ripple-effect" type="submit" form="upload-image-form">Загрузить</button>
+
                                 </form>
+
                                 <form method="post" action="{{ route('EditProfile') }}" id="EditProfile" >
                                     @csrf
                                 <div class="col">
