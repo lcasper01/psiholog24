@@ -13,17 +13,18 @@
 
 
 //Auth::routes();
-
+Route::get('/test','Profile\EditProfileController@test');
 Route::get('/', 'PageController@index')->name('home');
 Route::get('/specProfile', 'PageController@SpecProfile')->name('SpecProfile');
 Route::get('/specProfileSettings', 'PageController@SpecProfileSettings')->name('SpecProfileSettings');
 Route::post('/specProfileSettings/edit', 'Profile\EditProfileController@edit')->name('EditProfile');
 Route::get('/speclist','PageController@Speclist')->name('Speclist');
-Route::post('/specProfileSettings/upload', 'Profile\EditProfileController@upload')->name('UploadImage');
+Route::post('/upload', 'Profile\EditProfileController@upload')->name('UploadImage');
 
 
 
-Route::get('/test', 'PageController@test')->name('test');
+
+Route::get('/test123', 'PageController@test')->name('test')->name('Speclist');;
 
 /**
  * Роуты аутентификации...
