@@ -21,12 +21,6 @@ class PageController extends Controller
         return view('layouts.app');
     }
 
-    public function SpecProfile()
-    {
-
-        return view('page.Specprofile');
-    }
-
     public function Speclist()
     {
         $users=USER::all();
@@ -41,6 +35,13 @@ class PageController extends Controller
             return view('page.SpecProfileSettings', compact('user'));
         }
 
+    }
+
+    public function Specprofile(Request $request)
+    {
+        $userID=$request->userID;
+        $user = User::find($userID);
+        return view('page.Specprofile', compact('user'));
     }
 
 

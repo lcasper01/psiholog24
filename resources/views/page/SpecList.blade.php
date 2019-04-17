@@ -147,7 +147,7 @@
                                 <!-- Avatar -->
                                 <div class="freelancer-avatar">
                                     <div class="verified-badge"></div>
-                                    <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-01.jpg" alt=""></a>
+                                    <a href="single-freelancer-profile.html"><img src="{{asset('/storage/'. $user->avatar )}}" alt=""></a>
                                 </div>
 
                                 <!-- Name -->
@@ -171,7 +171,7 @@
                                     <li>Провел бесед<strong>95%</strong></li>
                                 </ul>
                             </div>
-                            <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
+                            <a href="/single-spec-profile/{{$user->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
                         </div>
                     </div>
                     <!-- Freelancer / End -->
