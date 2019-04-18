@@ -21,6 +21,7 @@ Route::post('/specProfileSettings/edit', 'Profile\EditProfileController@edit')->
 Route::get('/speclist','PageController@Speclist')->name('Speclist');
 Route::post('/upload', 'Profile\EditProfileController@upload')->name('UploadImage');
 Route::get('/single-spec-profile/{userID}', 'PageController@Specprofile')->name('single-spec-profile');
+Route::get('/webconference', 'PageController@WebConference')->name('WebConference');
 
 
 

@@ -4,8 +4,8 @@
     <list default="true" id="9f0e80c3-3e72-41d0-9863-534e3ff473fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/SpecList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/SpecList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/Specprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/Specprofile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="280">
+              <caret line="23" column="81" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="81" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -32,10 +32,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3280">
+              <caret line="164" column="87" selection-start-line="164" selection-start-column="87" selection-end-line="164" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="775">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding>
                 <element signature="e#39#75#0#PHP" expanded="true" />
               </folding>
@@ -44,83 +53,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/Specprofile.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/page/webconference.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="120" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="120" />
-              <folding>
-                <element signature="e#1771#7385#0#HTML" />
-                <element signature="e#7439#10678#0#HTML" />
-              </folding>
+            <state>
+              <caret selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
-              <folding>
-                <element signature="e#23#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="109" column="112" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="112" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/settingleftmenu.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/SpecList.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="149" column="125" selection-start-line="149" selection-start-column="125" selection-end-line="149" selection-end-column="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hireoTemlateHtml/HTML/dashboard-settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4720">
-              <caret line="236" column="137" selection-start-line="236" selection-start-column="106" selection-end-line="236" selection-end-column="137" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hireoTemlateHtml/HTML/freelancers-list-layout-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6860">
-              <caret line="343" selection-start-line="343" selection-end-line="345" selection-end-column="20" />
+            <state relative-caret-position="200">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#829#3664#0#HTML" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/hireoTemlateHtml/HTML/dashboard-reviews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3460">
-              <caret line="173" selection-start-line="173" selection-end-line="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/test.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="278">
+              <caret line="596" column="10" lean-forward="true" selection-start-line="409" selection-start-column="4" selection-end-line="596" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +101,7 @@
       <find>Search</find>
       <find>сохрани</find>
       <find>padding-bottom-0</find>
+      <find>выход</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,12 +126,14 @@
         <option value="$PROJECT_DIR$/resources/views/page/profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/test.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Profile/EditProfileController.php" />
-        <option value="$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/Specprofile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/SpecList.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/resources/views/page/Specprofile.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/page/SpecList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/webconference.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/settingleftmenu.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php" />
       </list>
     </option>
   </component>
@@ -250,7 +218,7 @@
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1614" />
@@ -264,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,6 +310,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,18 +361,19 @@
       <workItem from="1554794844907" duration="606000" />
       <workItem from="1555046927245" duration="1518000" />
       <workItem from="1555054797456" duration="18904000" />
-      <workItem from="1555499054835" duration="1924000" />
+      <workItem from="1555499054835" duration="4337000" />
+      <workItem from="1555571160531" duration="4360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45450000" />
+    <option name="totallyTimeSpent" value="52223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -636,6 +605,37 @@
         <state relative-caret-position="-780" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Profile/EditProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="e#48#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page/Specprofile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="120" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="120" />
+          <folding>
+            <element signature="e#1771#7385#0#HTML" />
+            <element signature="e#7439#10678#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hireoTemlateHtml/HTML/dashboard-settings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4720">
@@ -653,27 +653,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/page/test.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3460">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        <state>
+          <caret selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Profile/EditProfileController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/page/SpecList.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="427">
+          <caret line="159" column="31" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hireoTemlateHtml/HTML/dashboard-reviews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="596" column="10" lean-forward="true" selection-start-line="409" selection-start-column="4" selection-end-line="596" selection-end-column="10" />
           <folding>
-            <element signature="e#48#84#0#PHP" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="280">
+          <caret line="23" column="81" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="81" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
@@ -682,53 +689,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="775">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding>
             <element signature="e#39#75#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page/test.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="3280">
+          <caret line="164" column="87" selection-start-line="164" selection-start-column="87" selection-end-line="164" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/page/webconference.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-column="25" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/settingleftmenu.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/page/SpecProfileSettings.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="109" column="112" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page/Specprofile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="120" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="120" />
+        <state relative-caret-position="200">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#1771#7385#0#HTML" />
-            <element signature="e#7439#10678#0#HTML" />
+            <element signature="e#829#3664#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page/SpecList.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="149" column="125" selection-start-line="149" selection-start-column="125" selection-end-line="149" selection-end-column="125" />
         </state>
       </provider>
     </entry>
