@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 
+
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -24,7 +25,7 @@ class PageController extends Controller
 
     public function Speclist()
     {
-        $users = USER::all();
+        $users = USER::where('isspec',1)->get();
         return view('page.SpecList', compact('users'));
     }
 

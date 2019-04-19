@@ -176,7 +176,7 @@
                         <div class="user-details">
                         <div class="user-avatar status-online"><img src="{{asset('/storage/'. $user->avatar)}}" alt=""></div>
                         <div class="user-name">
-                            {{ Auth::user()->name }}<span>Психолог</span>
+                           <span> {{$user->name}}</span>
                         </div>
                         </div>
 
@@ -438,26 +438,28 @@
                     <h3>Создание аккаунта!</h3>
                 </div>
 
-                {{--<!-- Account Type -->--}}
-                {{--<div class="account-type">--}}
-                    {{--<div>--}}
-                        {{--<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>--}}
-                        {{--<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Специалист</label>--}}
-                    {{--</div>--}}
-
-                    {{--<div>--}}
-                        {{--<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>--}}
-                        {{--<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Пользователь</label>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
                 <!-- Form -->
                 <form method="post" action="{{ route('register') }}" id="register-account-form" >
                     @csrf
-                    {{--<div class="input-with-icon-left">--}}
-                        {{--<i class="icon-material-outline-account-circle"></i>--}}
-                        {{--<input type="text" class="input-text with-border" name="name" id="name" placeholder="Имя" required/>--}}
-                    {{--</div>--}}
+
+                    <!-- Account Type -->
+                        <div class="account-type">
+                            <div>
+                                <input type="radio" name="account-type-radio"  value="0" id="freelancer-radio" class="account-type-radio" checked/>
+                                <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Пользователь</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="account-type-radio"  value="1" id="employer-radio" class="account-type-radio"/>
+                                <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Специалист</label>
+                            </div>
+                        </div>
+
+
+                    <div class="input-with-icon-left">
+                        <i class="icon-material-outline-account-circle"></i>
+                        <input type="text" class="input-text with-border" name="name" id="name" placeholder="Имя" required/>
+                    </div>
                     <div class="input-with-icon-left">
                         <i class="icon-material-baseline-mail-outline"></i>
                         <input type="text" class="input-text with-border" id="email" name="email" placeholder="Email" required/>
