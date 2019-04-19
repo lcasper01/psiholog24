@@ -21,11 +21,19 @@ class User extends Authenticatable
         'password',
         'name',
         'email',
-        'last_name',
         'price',
         'skills',
         'avatar',
-        'description'
+        'description',
+        'isspec',
+        'country',
+        'sity',
+        'gender',
+        'rating',
+        'clients',
+        'comments',
+        'webconferences'
+
     ];
 
     /**
