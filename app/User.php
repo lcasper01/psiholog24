@@ -32,7 +32,11 @@ class User extends Authenticatable
         'rating',
         'clients',
         'comments',
-        'webconferences'
+        'webconferences',
+        'education',
+        'specialization',
+        'dolzhnost',
+        'metods'
 
     ];
 

@@ -20,15 +20,17 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');                                             //Пароль
             $table->float('price')->nullable();                                     //Цена за час
-            $table->text('skills','255')->nullable();                       //Специализация
+            $table->text('specialty','255')->nullable();                       //Специализация
             $table->text('avatar','255')->nullable();                       //Путь к аватарке
             $table->text('description','1000')->nullable();                 //Обо мне
+            $table->text('dolzhnost','1000')->nullable();
             $table->boolean('isspec')->nullable();                                  //Специалист или нет
             $table->text('country','50')->nullable();                       //Страна
             $table->text('sity','50')->nullable();                          //Город
             $table->text('gender','10')->nullable();                        //Пол
-            $table->text('education','1000');                              //Образование
-            $table->text('Specialization','1000');                          //Специализация
+            $table->text('education','1000')->nullable();                             //Образование
+            $table->text('specialization','1000')->nullable();                       //Специализация
+            $table->text('metods','500')->nullable();
             $table->float('rating', 2, 2)->nullable();          //Рейтинг
             $table->unsignedInteger('clients')->nullable();              //Кол-во клиентов
             $table->unsignedInteger('conferences')->nullable();       //Кол-во вебконференций
