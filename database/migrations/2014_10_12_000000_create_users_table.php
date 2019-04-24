@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->text('education','1000')->nullable();                             //Образование
             $table->text('specialization','1000')->nullable();                       //Специализация
             $table->text('metods','500')->nullable();
-            $table->float('rating', 2, 2)->nullable();          //Рейтинг
+            $table->float('rating')->nullable();          //Рейтинг
             $table->unsignedInteger('clients')->nullable();              //Кол-во клиентов
             $table->unsignedInteger('conferences')->nullable();       //Кол-во вебконференций
             $table->rememberToken();

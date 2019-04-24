@@ -15,7 +15,8 @@ class PageController extends Controller
             $userID = Auth::user()->id;
             $user = User::find($userID);
         }
-        return view('page.home', compact('user'));
+        $users = USER::where('isspec',1)->get();
+        return view('page.home', compact('user','users'));
     }
 
     public function test()
@@ -34,6 +35,7 @@ class PageController extends Controller
         if (Auth::check()) {
             $userID = Auth::user()->id;
             $user = User::find($userID);
+
             return view('page.SpecProfileSettings', compact('user'));
         }
 

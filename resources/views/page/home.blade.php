@@ -451,13 +451,13 @@
                     <!-- Section Headline -->
                     <div class="section-headline margin-top-0 margin-bottom-25">
                         <h3>Лучшие специалисты</h3>
-                        <a href="freelancers-grid-layout.html" class="headline-link">Просмотреть всех специалистов</a>
+                        <a href="{{route('Speclist')}}" class="headline-link">Просмотреть всех специалистов</a>
                     </div>
                 </div>
 
                 <div class="col-xl-12">
                     <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
-
+                         @foreach($users as $user)
                         <!--Freelancer -->
                         <div class="freelancer">
 
@@ -471,20 +471,20 @@
                                     <!-- Avatar -->
                                     <div class="freelancer-avatar">
                                         <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-01.jpg" alt=""></a>
+                                        <a href="/single-spec-profile/{{$user->id}}"><img src="{{asset('/storage/'. $user->avatar )}}" alt=""></a>
                                     </div>
 
                                     <!-- Name -->
                                     <div class="freelancer-name">
-                                        <h4><a href="single-freelancer-profile.html">Иванов Алексей Николаевич
+                                        <h4><a href="/single-spec-profile/{{$user->id}}">{{$user->name}}
                                                 {{--<img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top">--}}
                                             </a></h4>
-                                        <span>Детский психолог</span>
+                                        <span>{{$user->specialty}}</span>
                                     </div>
 
                                     <!-- Rating -->
                                     <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
+                                        <div class="star-rating" data-rating="{{$user->rating}}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -493,223 +493,17 @@
                             <div class="freelancer-details">
                                 <div class="freelancer-details-list">
                                     <ul>
-                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> Самара</strong></li>
-                                        <li>Оплата<strong>$20 /час</strong></li>
+                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$user->sity}}</strong></li>
+                                        <li>Оплата<strong>{{$user->price}} р /час</strong></li>
                                         <li>Заявок<strong>95</strong></li>
                                     </ul>
                                 </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
+                                <a href="/single-spec-profile/{{$user->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
                             </div>
                         </div>
                         <!-- Freelancer / End -->
+                         @endforeach
 
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-02.jpg" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
-                                        <span>iOS Expert + Node Dev</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <div class="freelancer-details-list">
-                                    <ul>
-                                        <li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
-                                        <li>Rate <strong>$40 / hr</strong></li>
-                                        <li>Job Success <strong>88%</strong></li>
-                                    </ul>
-                                </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
-                                        <span>Front-End Developer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="4.9"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <div class="freelancer-details-list">
-                                    <ul>
-                                        <li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
-                                        <li>Rate <strong>$50 / hr</strong></li>
-                                        <li>Job Success <strong>100%</strong></li>
-                                    </ul>
-                                </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-big-03.jpg" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
-                                        <span>Magento Certified Developer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <div class="freelancer-details-list">
-                                    <ul>
-                                        <li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
-                                        <li>Rate <strong>$70 / hr</strong></li>
-                                        <li>Job Success <strong>100%</strong></li>
-                                    </ul>
-                                </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy" data-tippy-placement="top"></a></h4>
-                                        <span>Laravel Dev</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="4.5"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <div class="freelancer-details-list">
-                                    <ul>
-                                        <li>Location <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
-                                        <li>Rate <strong>$80 / hr</strong></li>
-                                        <li>Job Success <strong>89%</strong></li>
-                                    </ul>
-                                </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France" data-tippy-placement="top"></a></h4>
-                                        <span>WordPress Expert</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <div class="freelancer-details-list">
-                                    <ul>
-                                        <li>Location <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
-                                        <li>Rate <strong>$50 / hr</strong></li>
-                                        <li>Job Success <strong>100%</strong></li>
-                                    </ul>
-                                </div>
-                                <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
 
 
                     </div>
@@ -869,17 +663,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Language Switcher -->
-                                <div class="footer-row">
-                                    <div class="footer-row-inner">
-                                        <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
-                                            <option selected>English</option>
-                                            <option>Français</option>
-                                            <option>Español</option>
-                                            <option>Deutsch</option>
-                                        </select>
-                                    </div>
-                                </div>
+
                             </div>
 
                         </div>
@@ -890,80 +674,14 @@
         </div>
         <!-- Footer Top Section / End -->
 
-        <!-- Footer Middle Section -->
-        <div class="footer-middle-section">
-            <div class="container">
-                <div class="row">
 
-                    <!-- Links -->
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <div class="footer-links">
-                            <h3>For Candidates</h3>
-                            <ul>
-                                <li><a href="#"><span>Browse Jobs</span></a></li>
-                                <li><a href="#"><span>Add Resume</span></a></li>
-                                <li><a href="#"><span>Job Alerts</span></a></li>
-                                <li><a href="#"><span>My Bookmarks</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <div class="footer-links">
-                            <h3>For Employers</h3>
-                            <ul>
-                                <li><a href="#"><span>Browse Candidates</span></a></li>
-                                <li><a href="#"><span>Post a Job</span></a></li>
-                                <li><a href="#"><span>Post a Task</span></a></li>
-                                <li><a href="#"><span>Plans & Pricing</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <div class="footer-links">
-                            <h3>Helpful Links</h3>
-                            <ul>
-                                <li><a href="#"><span>Contact</span></a></li>
-                                <li><a href="#"><span>Privacy Policy</span></a></li>
-                                <li><a href="#"><span>Terms of Use</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="col-xl-2 col-lg-2 col-md-3">
-                        <div class="footer-links">
-                            <h3>Account</h3>
-                            <ul>
-                                <li><a href="#"><span>Log In</span></a></li>
-                                <li><a href="#"><span>My Account</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="col-xl-4 col-lg-4 col-md-12">
-                        <h3><i class="icon-feather-mail"></i> Sign Up For a Newsletter</h3>
-                        <p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
-                        <form action="#" method="get" class="newsletter">
-                            <input type="text" name="fname" placeholder="Enter your email address">
-                            <button type="submit"><i class="icon-feather-arrow-right"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Middle Section / End -->
 
         <!-- Footer Copyrights -->
         <div class="footer-bottom-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        © 2018 <strong>Hireo</strong>. All Rights Reserved.
+                        © 2019 <strong>IT-PARTY - Pages&Content</strong>
                     </div>
                 </div>
             </div>

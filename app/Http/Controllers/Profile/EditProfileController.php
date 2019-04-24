@@ -36,6 +36,7 @@ class EditProfileController extends Controller
         $user = User::find($userID);
         $user->avatar=$path;
         $user->save();
-        return view('page.home',compact('user'));
+        $users = USER::where('isspec',1)->get();
+        return view('page.home',compact('user','users'));
     }
 }

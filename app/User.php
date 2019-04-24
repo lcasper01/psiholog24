@@ -22,7 +22,6 @@ class User extends Authenticatable
         'name',
         'email',
         'price',
-        'skills',
         'avatar',
         'description',
         'isspec',
@@ -36,7 +35,8 @@ class User extends Authenticatable
         'education',
         'specialization',
         'dolzhnost',
-        'metods'
+        'metods',
+        'specialty'
 
     ];
 

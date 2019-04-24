@@ -20,9 +20,6 @@
 
 </head>
 <body>
-
-
-
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -39,7 +36,7 @@
 
                     <!-- Logo -->
                     <div id="logo">
-                        <a href="{{route('home')}}"><img src="images/logo.png" alt=""></a>
+                        <a href="{{route('home')}}"><img src="{{ asset('images/logo.png')}}" alt=""></a>
                     </div>
 
                     <!-- Main Navigation -->
@@ -212,14 +209,15 @@
         </div>
         <!-- Right Side Content / End -->
 
-</div>
-</div>
-<!-- Header / End -->
 
-</header>
+
+    <!-- Header / End -->
+    </header>
+
 @yield('content')
 
 @yield('footer')
+</div>
 <!-- Wrapper / End -->
 
 <!-- Sign In Popup

@@ -152,11 +152,11 @@
 
                                 <!-- Name -->
                                 <div class="freelancer-name">
-                                    <h4><a href="#">{{$user->name}}<img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
-                                    <span>{{$user->skills}}</span>
+                                    <h4><a href="#">{{$user->name}}</a></h4>
+                                    <span>{{$user->specialty}}</span>
                                     <!-- Rating -->
                                     <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="4.9"></div>
+                                        <div class="star-rating" data-rating="{{$user->rating}}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +166,9 @@
                         <div class="freelancer-details">
                             <div class="freelancer-details-list">
                                 <ul>
-                                    <li>Location <strong><i class="icon-material-outline-location-on"></i> Самара</strong></li>
+                                    <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$user->sity}}</strong></li>
                                     <li>Цена <strong>{{$user->price}}р / ч</strong></li>
-                                    <li>Провел бесед<strong>95%</strong></li>
+                                    <li>Бесед<strong>95</strong></li>
                                 </ul>
                             </div>
                             <a href="/single-spec-profile/{{$user->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>

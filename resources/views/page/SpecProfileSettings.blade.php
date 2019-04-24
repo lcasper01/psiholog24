@@ -154,8 +154,8 @@
 
                                         <div class="col-xl-6">
                                             <div class="submit-field">
-                                                <h5>Email</h5>
-                                                <input type="text" class="with-border" value="tom@example.com">
+                                                <h5>Город</h5>
+                                                <input name="sity" type="text" class="with-border" value="{{$user->sity}}">
                                             </div>
                                         </div>
                                     </div>
@@ -199,7 +199,7 @@
                                                 <!-- Skills List -->
                                                 <div class="keywords-container">
                                                     <div class="keyword-input-container">
-                                                        <input type="text" name="skills" class="keyword-input with-border" placeholder="{{$user->specialty}}"/>
+                                                        <input type="text" name="specialty" class="keyword-input with-border" placeholder="{{$user->specialty}}"/>
                                                     </div>
                                                     {{--<div class="keywords-list">--}}
                                                         {{--<span class="keyword"><span class="keyword-remove"></span><span class="keyword-text">Психолог</span></span>--}}
@@ -247,8 +247,15 @@
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="submit-field">
+                                                <h5>Образование</h5>
+                                                <textarea name="education" cols="30" rows="3" class="with-border">{{$user->education}}</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-12">
+                                            <div class="submit-field">
                                                 <h5>Должность</h5>
-                                                <textarea name="description" cols="30" rows="3" class="with-border">{{$user->dolzhnost}}</textarea>
+                                                <textarea name="dolzhnost" cols="30" rows="3" class="with-border">{{$user->dolzhnost}}</textarea>
                                             </div>
                                         </div>
 
@@ -262,7 +269,7 @@
                                         <div class="col-xl-12">
                                             <div class="submit-field">
                                                 <h5>Методы</h5>
-                                                <textarea name="metod" cols="30" rows="2" class="with-border">{{$user->description}}</textarea>
+                                                <textarea name="metods" cols="30" rows="2" class="with-border">{{$user->metods}}</textarea>
                                             </div>
                                         </div>
 
