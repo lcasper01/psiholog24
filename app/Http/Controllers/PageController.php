@@ -15,8 +15,8 @@ class PageController extends Controller
             $userID = Auth::user()->id;
             $user = User::find($userID);
         }
-        $users = USER::where('isspec',1)->get();
-        return view('page.home', compact('user','users'));
+        $usersspecs = USER::where('isspec',1)->get();
+        return view('page.home', compact('user','usersspecs'));
     }
 
     public function test()
@@ -57,7 +57,7 @@ class PageController extends Controller
 
     }
 
-    public function search(Request $request)
+    public function search()
     {
         $search=\Request::get('title');
         $users = User::where('name', 'like','%'.$search.'%')->get();

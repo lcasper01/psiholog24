@@ -260,7 +260,7 @@
 
                 <div class="col-xl-12">
                     <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
-                         @foreach($users as $user)
+                         @foreach($usersspecs as $usersspec)
                         <!--Freelancer -->
                         <div class="freelancer">
 
@@ -274,20 +274,20 @@
                                     <!-- Avatar -->
                                     <div class="freelancer-avatar">
                                         <div class="verified-badge"></div>
-                                        <a href="/single-spec-profile/{{$user->id}}"><img src="{{asset('/storage/'. $user->avatar )}}" alt=""></a>
+                                        <a href="/single-spec-profile/{{$usersspec->id}}"><img src="{{asset('/storage/'. $usersspec->avatar )}}" alt=""></a>
                                     </div>
 
                                     <!-- Name -->
                                     <div class="freelancer-name">
-                                        <h4><a href="/single-spec-profile/{{$user->id}}">{{$user->name}}
+                                        <h4><a href="/single-spec-profile/{{$usersspec->id}}">{{$usersspec->name}}
                                                 {{--<img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top">--}}
                                             </a></h4>
-                                        <span>{{$user->specialty}}</span>
+                                        <span>{{$usersspec->specialty}}</span>
                                     </div>
 
                                     <!-- Rating -->
                                     <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="{{$user->rating}}"></div>
+                                        <div class="star-rating" data-rating="{{$usersspec->rating}}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -296,12 +296,12 @@
                             <div class="freelancer-details">
                                 <div class="freelancer-details-list">
                                     <ul>
-                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$user->sity}}</strong></li>
-                                        <li>Оплата<strong>{{$user->price}} р /час</strong></li>
+                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$usersspec->sity}}</strong></li>
+                                        <li>Оплата<strong>{{$usersspec->price}} р /час</strong></li>
                                         <li>Заявок<strong>95</strong></li>
                                     </ul>
                                 </div>
-                                <a href="/single-spec-profile/{{$user->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
+                                <a href="/single-spec-profile/{{$usersspec->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
                             </div>
                         </div>
                         <!-- Freelancer / End -->
