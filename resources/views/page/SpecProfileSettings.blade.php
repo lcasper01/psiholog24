@@ -20,7 +20,7 @@
                 </a>
 
                 <!-- Navigation -->
-                @extends('layouts.settingleftmenu')
+
                 <div class="dashboard-nav">
                     <div class="dashboard-nav-inner">
 
@@ -28,7 +28,7 @@
                             {{--<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>--}}
                             <li><a href="dashboard-messages.html"><i class="icon-material-outline-question-answer"></i> Сообщения <span class="nav-tag">2</span></a></li>
                             {{--<li><a href="dashboard-bookmarks.html"><i class="icon-material-outline-star-border"></i> Bookmarks</a></li>--}}
-                            <li><a href="{{route('WebConference')}}"><i class="icon-material-outline-rate-review"></i> Веб-конференции</a></li>
+                            {{--<li><a href="{{route('WebConference')}}"><i class="icon-material-outline-rate-review"></i> Веб-конференции</a></li>--}}
                         </ul>
 
                         {{--<ul data-submenu-title="Organize and Manage">--}}
@@ -55,6 +55,12 @@
                                    onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
                                     <i class="icon-material-outline-power-settings-new" ></i> Выход</a></li>
+                        </ul>
+
+                        <ul data-submenu-title="Веб-конференции">
+                            <li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Создать конференцию</a></li>
+                            <li><a href="dashboard-messages.html"><i class="icon-material-outline-assignment"></i> Список конференций <span class="nav-tag">2</span></a></li>
+                            <li><a href="dashboard-bookmarks.html"><i class="icon-material-outline-rate-review"></i> Удалить конференцию</a></li>
                         </ul>
 
                     </div>
