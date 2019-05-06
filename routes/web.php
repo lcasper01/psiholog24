@@ -27,6 +27,7 @@ Route::post('/search', 'PageController@search')->name('search');
 
 
 
+
 Route::get('/test123', 'PageController@test')->name('test')->name('Speclist');;
 
 /**

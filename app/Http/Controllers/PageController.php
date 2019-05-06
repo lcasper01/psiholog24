@@ -60,8 +60,8 @@ class PageController extends Controller
     public function search()
     {
         $search=\Request::get('title');
-        $users = User::where('name', 'like','%'.$search.'%')->get();
-        return view('page.search',compact('users'));
+        $profiles= User::where('name', 'like','%'.$search.'%')->get();
+        return view('page.search',compact('profiles'));
     }
 
 

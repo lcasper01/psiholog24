@@ -8,30 +8,51 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-xl-9 col-lg-8 content-left-offset">
 
+
+            <div class="col-xl-9 col-lg-8 content-left-offset">
+                <!-- Search Bar -->
+                <form method="post" action="{{route('search')}}" id="search-form" >
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="intro-banner-search-form margin-top-95">
+                                <!-- Search Field -->
+                                <div class="intro-search-field">
+                                    <input id="title" name="title" type="text" placeholder="Поиск по специалистам">
+                                </div>
+                                <!-- Button -->
+                                <div class="intro-search-button">
+                                    <button type="submit" class="button ripple-effect" form="search-form">Поиск</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <!-- END Search Bar -->
                 {{--<h3 class="page-title">Search Results</h3>--}}
 
-                <div class="notify-box margin-top-15">
+                {{--<div class="notify-box margin-top-15">--}}
                     {{--<div class="switch-container">--}}
                     {{--<label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Turn on email alerts for this search</span></label>--}}
                     {{--</div>--}}
 
-                    <div class="sort-by">
-                        <span>Фильтр:</span>
-                        <select class="selectpicker hide-tick">
-                            <option>По рейтингу</option>
-                            <option>Новые</option>
-                            <option>Старые(НАДО заменить)</option>
-                            <option>Случайно</option>
-                        </select>
-                    </div>
-                </div>
+                    {{--<div class="sort-by">--}}
+                        {{--<span>Фильтр:</span>--}}
+                        {{--<select class="selectpicker hide-tick">--}}
+                            {{--<option>По рейтингу</option>--}}
+                            {{--<option>Новые</option>--}}
+                            {{--<option>Старые(НАДО заменить)</option>--}}
+                            {{--<option>Случайно</option>--}}
+                        {{--</select>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
                 <!-- Freelancers List Container -->
                 <div class="freelancers-container freelancers-list-layout margin-top-35">
 
-                @foreach($users as $user)
+                @foreach($profiles as $profile)
                     <!--Freelancer -->
                         <div class="freelancer">
 
@@ -45,16 +66,16 @@
                                     <!-- Avatar -->
                                     <div class="freelancer-avatar">
                                         <div class="verified-badge"></div>
-                                        <a href="/single-spec-profile/{{$user->id}}"><img src="{{asset('/storage/'. $user->avatar )}}" alt=""></a>
+                                        <a href="/single-spec-profile/{{$profile->id}}"><img src="{{asset('/storage/'. $profile->avatar )}}" alt=""></a>
                                     </div>
 
                                     <!-- Name -->
                                     <div class="freelancer-name">
-                                        <h4><a href="#">{{$user->name}}</a></h4>
-                                        <span>{{$user->specialty}}</span>
+                                        <h4><a href="#">{{$profile->name}}</a></h4>
+                                        <span>{{$profile->specialty}}</span>
                                         <!-- Rating -->
                                         <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="{{$user->rating}}"></div>
+                                            <div class="star-rating" data-rating="{{$profile->rating}}"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -64,12 +85,12 @@
                             <div class="freelancer-details">
                                 <div class="freelancer-details-list">
                                     <ul>
-                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$user->sity}}</strong></li>
-                                        <li>Цена <strong>{{$user->price}}р / ч</strong></li>
+                                        <li>Город <strong><i class="icon-material-outline-location-on"></i> {{$profile->sity}}</strong></li>
+                                        <li>Цена <strong>{{$profile->price}}р / ч</strong></li>
                                         <li>Бесед<strong>95</strong></li>
                                     </ul>
                                 </div>
-                                <a href="/single-spec-profile/{{$user->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
+                                <a href="/single-spec-profile/{{$profile->id}}" class="button button-sliding-icon ripple-effect">Просмотреть профиль<i class="icon-material-outline-arrow-right-alt"></i></a>
                             </div>
                         </div>
                         <!-- Freelancer / End -->
